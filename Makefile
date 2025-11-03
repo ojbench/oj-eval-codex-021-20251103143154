@@ -1,5 +1,5 @@
 CXX ?= g++
-CXXFLAGS ?= -O2 -pipe -static -s -std=gnu++17
+CXXFLAGS ?= -O2 -pipe -std=gnu++17
 LDFLAGS ?=
 
 SRC := main.cpp
@@ -14,4 +14,3 @@ $(BIN): $(SRC) $(HDR)
 .PHONY: clean
 clean:
 	rm -f $(BIN) *.o
-
