@@ -17,7 +17,7 @@ int main() {
     // Greedy one-step lookahead with velocity bounding tie-breakers
     const string choices = "ABCDE";
 
-    const int t_cap = std::min(game->m, 5000); // cap operations to avoid judge TLE
+    const int t_cap = std::min(game->m, 8000); // cap operations to avoid judge TLE while allowing more scoring
     while (game->bricksRemaining() > 0 && (int)ops.size() < t_cap) {
         Game::Save *s0 = game->save();
 
